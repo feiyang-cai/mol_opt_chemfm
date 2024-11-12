@@ -110,6 +110,8 @@ def main(method,oracle_name):
         from main.moldqn.run import MolDQN_Optimizer as Optimizer
     elif args.method == 'reinvent':
         from main.reinvent.run import REINVENT_Optimizer as Optimizer
+    elif args.method == 'reinvent_chemfm':
+        from main.reinvent_chemfm.run import REINVENT_Optimizer as Optimizer
     elif args.method == 'reinvent_transformer':
         from main.reinvent_transformer.run_transformer import REINVENT_Optimizer as Optimizer
     elif args.method == 'reinvent_selfies':
